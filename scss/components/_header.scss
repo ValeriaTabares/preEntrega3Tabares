@@ -1,0 +1,12 @@
+header{
+    background-color: $secondary;
+    li{
+        padding: 1rem;
+        .nav-link{
+            color: $primary;
+            &:hover{
+                color: $tertiary;
+            }
+        }
+    }
+}

@@ -3,3 +3,16 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+header {
+  background-color: #f3ecff;
+}
+header li {
+  padding: 1rem;
+}
+header li .nav-link {
+  color: #5d4c7e;
+}
+header li .nav-link:hover {
+  color: #6c757d;
+}/*# sourceMappingURL=style.css.map */
