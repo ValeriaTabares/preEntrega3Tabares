@@ -15,4 +15,22 @@ header li .nav-link {
 }
 header li .nav-link:hover {
   color: #6c757d;
+}
+
+footer {
+  position: absolute;
+  background-color: #f3ecff;
+  width: 100%;
+  bottom: 0;
+}
+footer i {
+  font-size: 1.5rem;
+  color: #5d4c7e;
+}
+footer i:hover {
+  color: #6c757d;
+  transition: 1s;
+}
+footer .text-center {
+  background-color: #5d4c7e;
 }/*# sourceMappingURL=style.css.map */
