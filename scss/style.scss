@@ -1,7 +1,14 @@
 // reseteo del CSS
 @import "./reset/reset";
-// variables (paleta de colores)
+// variables
 @import "./utilities/variables";
+// maps
+@import "./utilities/maps";
+// mixins
+@import "./utilities/mixins";
 // componentes
 @import "./components/header";
-@import "./components/footer"
+@import "./components/footer";
+@import "./components/titles";
+@import "./components/texts";
+@import "./components/queries";

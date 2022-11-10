@@ -33,4 +33,40 @@ footer i:hover {
 }
 footer .text-center {
   background-color: #5d4c7e;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  color: #5d4c7e;
+  font-family: "Lato";
+  font-weight: 300;
+  width: 100%;
+  padding-top: 1rem;
+}
+
+@media screen and (min-width: 0px) {
+  .index {
+    display: grid;
+    grid-template-areas: "titulo__index" "imagen__index" "texto__index" "boton__index";
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin: 1rem;
+  }
+  .index__titulo {
+    grid-area: titulo__index;
+    padding: 1rem 2rem 0 2rem;
+  }
+  .index__imagen {
+    grid-area: imagen__index;
+    width: 100%;
+    padding: 1rem;
+  }
+  .index__texto {
+    grid-area: texto__index;
+  }
+  .index__boton {
+    grid-area: boton__index;
+  }
 }/*# sourceMappingURL=style.css.map */
