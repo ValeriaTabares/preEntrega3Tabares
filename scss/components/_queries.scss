@@ -93,7 +93,54 @@
 }
 
 // contenido servicios
-
+@media screen and (min-width: 0px){
+    .servicios{
+        display: grid;
+        grid-template-areas:
+            "bodas"
+            "cumpleanos"
+            "graduaciones";
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: 1fr;
+        .bodas{
+            grid-area: bodas;
+        }
+        .cumpleanos{
+            grid-area: cumpleanos;
+        }
+        .graduaciones{
+            grid-area: graduaciones;
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            border: 0.2rem $secondary solid;
+            margin: 2rem;
+            h2{
+                text-align: center;
+                padding: 2rem 2rem 0 2rem;
+                width: 100%;
+            }
+            img{
+                width: 15%;
+                margin: 1rem;
+                align-self: center;
+            }
+            p{
+                padding: 1rem 2rem 0 2rem;
+                font-family: map-get($estilos, tipografia);
+                font-size: map-get($estilos, tFuente2);
+                text-align: justify;
+                color: $tertiary;     
+            }
+        }
+    }
+}
+@media screen and (min-width: 1024px){
+    .servicios{
+        display: flex;
+    }
+}
 
 // contenido galeria
 @media screen and (min-width: 0px) {
