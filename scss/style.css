@@ -182,6 +182,9 @@ footer .text-center {
     color: #5d4c7e;
     font-family: "Lato";
   }
+  .contacto h1 {
+    padding: 2rem;
+  }
   .contacto fieldset {
     padding: 2rem;
   }
