@@ -132,6 +132,15 @@ footer .text-center {
     padding-bottom: 2rem;
   }
 }
+@media screen and (min-width: 0px) {
+  .contacto {
+    color: #5d4c7e;
+    font-family: "Lato";
+  }
+  .contacto fieldset {
+    padding: 2rem;
+  }
+}
 h1 {
   text-align: center;
   font-size: 4rem;
@@ -174,4 +183,17 @@ p {
 .index__boton a:hover {
   color: white;
   transition: 1s;
+}
+
+.contacto button {
+  background-color: #5d4c7e;
+  color: #f3ecff;
+  border-radius: 2rem;
+  padding: 0.1rem 1.2rem 0.1rem 1.2rem;
+  font-family: "Lato";
+}
+.contacto button:hover {
+  background-color: rgba(93, 76, 126, 0.7215686275);
+  transition: 1s;
+  color: white;
 }/*# sourceMappingURL=style.css.map */

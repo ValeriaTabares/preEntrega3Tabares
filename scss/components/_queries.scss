@@ -118,5 +118,14 @@
     }
 }
 
-
+// contenido contacto
+@media screen and (min-width: 0px){
+    .contacto{
+        color: $primary;
+        font-family: map-get($estilos, tipografia);
+        fieldset{
+            padding: 2rem;
+        }
+    }
+}
 
