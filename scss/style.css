@@ -14,27 +14,65 @@ header li .nav-link {
   color: #5d4c7e;
 }
 header li .nav-link:hover {
-  color: #6c757d;
+  color: #8d98a3;
 }
 
 footer {
-  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   background-color: #f3ecff;
   width: 100%;
-  bottom: 0;
 }
 footer i {
   font-size: 1.5rem;
   color: #5d4c7e;
 }
 footer i:hover {
-  color: #6c757d;
+  color: #8d98a3;
   transition: 1s;
 }
 footer .text-center {
   background-color: #5d4c7e;
 }
 
+@media screen and (min-width: 0px) {
+  .index {
+    display: grid;
+    grid-template-areas: "titulo__index" "imagen__index" "texto__index" "boton__index";
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin: 2rem;
+    gap: 2rem;
+  }
+  .index__titulo {
+    grid-area: titulo__index;
+  }
+  .index__imagen {
+    grid-area: imagen__index;
+    width: 100%;
+  }
+  .index__texto {
+    grid-area: texto__index;
+  }
+  .index__boton {
+    grid-area: boton__index;
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .index {
+    display: grid;
+    grid-template-areas: "titulo__index imagen__index" "texto__index imagen__index" "boton__index imagen__index";
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  .index__texto {
+    margin: 0 1rem 0 1rem;
+  }
+}
 h1 {
   text-align: center;
   font-size: 4rem;
@@ -45,28 +83,30 @@ h1 {
   padding-top: 1rem;
 }
 
-@media screen and (min-width: 0px) {
-  .index {
-    display: grid;
-    grid-template-areas: "titulo__index" "imagen__index" "texto__index" "boton__index";
-    grid-template-rows: repeat(4, auto);
-    grid-template-columns: 1fr;
-    justify-items: center;
-    margin: 1rem;
-  }
-  .index__titulo {
-    grid-area: titulo__index;
-    padding: 1rem 2rem 0 2rem;
-  }
-  .index__imagen {
-    grid-area: imagen__index;
-    width: 100%;
-    padding: 1rem;
-  }
-  .index__texto {
-    grid-area: texto__index;
-  }
-  .index__boton {
-    grid-area: boton__index;
-  }
+p {
+  font-family: "Lato";
+  font-size: 1rem;
+  text-align: justify;
+  font-weight: 300;
+}
+
+main button {
+  background-color: #5d4c7e;
+  border: 0;
+  border-radius: 2rem;
+  padding: 0 1.2rem 0.2rem 1.2rem;
+  height: 2rem;
+}
+main button:hover {
+  background-color: rgba(93, 76, 126, 0.7215686275);
+  transition: 1s;
+}
+main button a {
+  font-family: "Lato";
+  text-decoration: none;
+  color: #f3ecff;
+}
+main button a:hover {
+  color: white;
+  transition: 1s;
 }/*# sourceMappingURL=style.css.map */

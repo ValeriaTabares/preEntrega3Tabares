@@ -10,25 +10,36 @@
         grid-template-rows: repeat(4, auto);
         grid-template-columns: 1fr;
         justify-items: center;
-        margin: 1rem;
+        margin: 2rem;
+        gap: 2rem;
         &__titulo{
             grid-area: titulo__index;
-            padding: 1rem 2rem 0 2rem;
         }
         &__imagen{
             grid-area: imagen__index;
             width: 100%;
-            padding: 1rem;
         }
         &__texto{
             grid-area: texto__index;
         }
         &__boton{
             grid-area: boton__index;
+            margin-bottom: 2rem;
         }
     }
 }
-
-@media screen and (min-width: ) {
-    
+@media screen and (min-width: 1024px) {
+    .index{
+        display: grid;
+        grid-template-areas:
+            "titulo__index imagen__index"
+            "texto__index imagen__index"
+            "boton__index imagen__index";
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        &__texto{
+            margin: 0 1rem 0 1rem;
+        }
+    }
 }
