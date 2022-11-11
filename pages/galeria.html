@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Equipo de profesionales para la planeación de eventos.">
+    <meta name="keywords" content="Eventos, eventos, Decoracion, decoracion, Organizacion, organizacion, Salon, Salones, salon, salones, Fiesta, Fiestas, fiesta, fiestas, Bodas, bodas, Cumpleaños, cumpleaños, Graduaciones, graduaciones">
     <title>Galería</title>
     <!-- favicon -->
     <link rel="shortcut icon" href="../assets/img/favicon-64x64.png" type="image/x-icon">
@@ -19,6 +21,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <!-- WOW JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
     <header>
@@ -53,7 +58,7 @@
             </div>
         </nav>
     </header>
-    <main class="container-fluid">
+    <main class="container-fluid animate__animated animate__fadeInUp">
         <section class="row galeria">
             <div class="galeria__textos col-xs-12 col-md-10 col-xl-6">
                 <h1>Galería</h1>
@@ -76,37 +81,37 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="../assets/img/bodas1.jpg" class="d-block w-100" alt="imagen galería">
+                        <img src="../assets/img/bodas1.jpg" class="d-block w-100" alt="imagen de galería sobre bodas">
                         <div class="carousel-caption text-white">
                             <h5>Bodas</h5>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="../assets/img/cumpleaños1.jpg" class="d-block w-100" alt="imagen galería">
+                        <img src="../assets/img/cumpleaños1.jpg" class="d-block w-100" alt="imagen de galería sobre cumpleaños">
                         <div class="carousel-caption text-white">
                             <h5>Cumpleaños</h5>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="../assets/img/graduaciones1.jpg" class="d-block w-100" alt="imagen galería">
+                        <img src="../assets/img/graduaciones1.jpg" class="d-block w-100" alt="imagen de galería sobre graduaciones">
                         <div class="carousel-caption text-white">
                             <h5>Graduaciones</h5>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="../assets/img/bodas2.jpg" class="d-block w-100" alt="imagen galería">
+                        <img src="../assets/img/bodas2.jpg" class="d-block w-100" alt="imagen de galería sobre bodas">
                         <div class="carousel-caption text-white">
                             <h5>Bodas</h5>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="../assets/img/cumpleaños2.jpg" class="d-block w-100" alt="imagen galería">
+                        <img src="../assets/img/cumpleaños2.jpg" class="d-block w-100" alt="imagen de galería sobre cumpleaños">
                         <div class="carousel-caption text-white">
                             <h5>Cumpleaños</h5>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="../assets/img/graduaciones2.jpg" class="d-block w-100" alt="imagen galería">
+                        <img src="../assets/img/graduaciones2.jpg" class="d-block w-100" alt="imagen de galería sobre graduaciones">
                         <div class="carousel-caption text-white">
                             <h5>Graduaciones</h5>
                         </div>
@@ -124,7 +129,6 @@
                 </button>
             </div>
         </section>
-
     </main>
     <footer class="text-center text-white">
         <div class="container p-4 pb-0">
@@ -145,6 +149,9 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
-
 </html>
