@@ -17,20 +17,29 @@ header li .nav-link:hover {
   color: #8d98a3;
 }
 
-footer {
-  position: static;
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+body footer {
+  margin-top: auto;
   background-color: #f3ecff;
   width: 100%;
 }
-footer i {
+body footer i {
   font-size: 1.5rem;
   color: #5d4c7e;
 }
-footer i:hover {
+body footer i:hover {
   color: #8d98a3;
   transition: 1s;
 }
-footer .text-center {
+body footer .text-center {
   background-color: #5d4c7e;
 }
 
