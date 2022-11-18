@@ -18,9 +18,7 @@ header li .nav-link:hover {
 }
 
 footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  position: static;
   background-color: #f3ecff;
   width: 100%;
 }
